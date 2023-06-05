@@ -1,3 +1,4 @@
+{% load static%}
 <!doctype html>
 <html lang="ru>
 <head>
@@ -6,10 +7,23 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>{% block title %}{% endblock %}</title>
+<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
 </head>
 <body>
-{% block content %}
+    <aside>
+        <img src="{% static 'main/img/logo_simple.jpg'%}" alt="Лого">
+        <span> class='logo'>itProger</span>
+        <h3>Навигация</h3>
+        ul>
+        <a href=""><li><i class="fa-solid fa-house"></i>Главная</li></a>
+        <a href=""><li><i class="fa-sharp fa-solid fa-camera-security"></i>Про нас</li></a>
+        <a href=""><li><i class="fa-solid fa-donut"></i>Про нас</li></a>
+    </aside>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
 
-{% endblock %}
 </body>
 </html>
