@@ -40,3 +40,14 @@ aside ul li {
     text-decoration: none;
     transform: scale (1.05);
  }
+
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 10 px;
+    text-align: center;
+    width: 75%
+}
+
+main .features h1 {font-size: 50 px;}
+main .features p (max-width: 400 px; margin: 20px auto}
